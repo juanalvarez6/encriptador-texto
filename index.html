@@ -11,8 +11,11 @@
         <div class="logo">
             <img src="assets/img/logo.png" alt="logo-alura">
         </div>
+        <p id="notificaciones">
+            
+        </p>
         <section class="encriptador">
-            <input class="encriptador-input" type="text" placeholder="Ingrese el texto aqui">
+            <textarea class="encriptador-input">Ingrese el texto aqui</textarea>
             <div>
                 <div class="info"><img src="assets/img/exclamation.png" alt="!"><p>Solo letras minúsculas y sin acentos</p></div>
                 <div class="botones">
@@ -25,6 +28,10 @@
             <div class="texto-desencriptado-cont-img d-none">
                 <img src="assets/img/muneco.png" alt="muñeco" class="d-none">
             </div>
+            <div id="cont-res">
+                <p class="respuesta"></p>
+                <button class="copiar">Copiar</button>
+            </div>
             <div class="mensajes">
                 <p class="mensajes-01">
                     Ningún mensaje fue encontrado
@@ -32,8 +39,6 @@
                 <p class="mensajes-02">
                     Ingresa el texto que desees encriptar o desencriptar.
                 </p>
-                <p class="respuesta"></p>
-                <button class="copiar">Copiar</button>
             </div>
         </section>
     </main>
