@@ -14,11 +14,14 @@
     --dark-blue-100: #609ED4;
 }
 
+body {
+    background-color: var(--light-blue-100);
+}
+
 .contenedor{
     display: flex;
     gap: 25px;
     justify-content: space-between;
-    background-color: var(--light-blue-100);
 }
 
 .logo {
@@ -52,6 +55,7 @@
 .encriptador-input {
     color: var(--dark-blue-300);
     font-size: 32px;
+    height: 50vh;
     border: none;
     background-color: var(--light-blue-100);
 }
@@ -140,6 +144,13 @@
     color: var(--gray-400);
 }
 
+#cont-res {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 72vh;
+}
+
 .copiar {
     padding: 10px 32px;
     background-color: var(--white);
@@ -149,12 +160,26 @@
     margin: 0px 20px 20px 20px;
     font-size: 16px;
     color: var(--dark-blue-300);
-    display: none;
 }
 
 .respuesta {
+    text-align: center;
     font-size: 24px;
+}
+
+#notificaciones {
     display: none;
+    font-size: 28px;
+    color: var(--white);
+    position: fixed;  
+    top: 10px;           
+    left: 50%; 
+    text-align: center;
+    border-radius: 15px;       
+    transform: translateX(-50%); 
+    background-color: var(--dark-blue-300); 
+    padding: 20px;
+    z-index: 1000;
 }
 
 @media (max-width: 500px) {
