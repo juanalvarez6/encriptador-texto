@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root {
+    --dark-blue-300: #0A3871;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    --gray-100: #CED4DA;
+    --white: #ffffff;
+    --light-blue-100: #F3F5FC;
+    --dark-blue-100: #609ED4;
+}
+
+.contenedor{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    background-color: var(--light-blue-100);
+}
+
+.logo {
+    width: 12%;
+}
+
+.logo img{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.encriptador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 110px;
+    margin-bottom: 40px;
+    width: 60%;
+}
+
+
+.encriptador-input:focus {
+    outline: none;
+} 
+
+.encriptador-input::placeholder{
+    color: var(--dark-blue-300);
+    text-shadow: 1px 1px 1px #000;
+}
+
+.encriptador-input {
+    color: var(--dark-blue-300);
+    font-size: 32px;
+    border: none;
+    background-color: var(--light-blue-100);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info img{
+    width: 16px;
+}
+
+.info p {
+    margin-left: 12px;
+    color: var(--gray-400);
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.botones button {
+    padding: 10px 32px;
+    font-size: 16px;
+    height: 40px;
+    width: 48%;
+    border-radius: 15px;
+    border-style: solid;
+}
+
+.botones-encriptar {
+    background-color: var(--dark-blue-300);
+    color: var(--white);
+    border-color: var(--dark-blue-300);
+}
+
+.botones-desencriptar {
+    background-color: var(--gray-100);
+    color: var(--dark-blue-300);
+    border-color: var(--dark-blue-300);
+}
+
+.texto-desencriptado {
+    margin: 40px;
+    background-color: var(--white);
+    border-radius: 20px;
+    width: 28%;
+}
+
+.texto-desencriptado div {
+    display: flex;
+    justify-content: center;
+}
+
+.texto-desencriptado img {
+    max-width: 250px;
+}
+
+.texto-desencriptado-cont-img {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.mensajes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.mensajes-01 {
+    font-size: 24px;
+    color: var(--gray-500);
+    font-weight: bold;
+}
+
+.mensajes-02 {
+    font-size: 16px;
+    color: var(--gray-400);
+}
+
+.copiar {
+    padding: 10px 32px;
+    background-color: var(--white);
+    border-color: var(--dark-blue-300); 
+    border-style: solid;
+    border-radius: 15px;
+    margin: 0px 20px 20px 20px;
+    font-size: 16px;
+    color: var(--dark-blue-300);
+    display: none;
+}
+
+.respuesta {
+    font-size: 24px;
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .encriptador-input {
+        font-size: 24px;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .botones button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encriptador {
+        height: 60vh;
+        margin-top: 0;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .texto-desencriptado {
+        width: 90%;
+    }
+
+    .mensajes {
+        width: 100%;
+    }
+
+    .texto-desencriptado {
+        padding: 30px 0;
+        margin: 0 40px;
+    }
+
+    .d-none {
+        display: none!important;
+    }
+}
